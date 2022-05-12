@@ -1,6 +1,6 @@
 ![logo](../logo.png)
 
-# New Stage Animate / HTML
+# Template Multi Tech FT Gulp V3 - Template
 
 ## Initial set up
 

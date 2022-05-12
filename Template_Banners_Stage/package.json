@@ -1,6 +1,6 @@
 {
   "name": "banner_template_gsap3_newgulp_ft",
-  "version": "3.3.31",
+  "version": "3.3.3",
   "title": "Template Multi Tech FT Gulp V3",
   "client": "AT&T B2B",
   "description": "New template Banner of Hangar - use GSAP3 and new code ES6",
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "Banner",
-    "web Ads",
-    "HangarWW"
+    "OLA",
+    "The Hangar"
   ],
   "engines": {
     "node": ">=12.16.1"

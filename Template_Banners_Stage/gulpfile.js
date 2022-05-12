@@ -73,7 +73,7 @@ function server(cd) {
 
 // Delete Dist Folder before build
 async function clean() {
-    console.log('>>>>>>>>>> STARTING DELETED TASK  🧹  <<<<');
+    console.log('>>>>>>>>>> STARTING DELETED TASK  ✂️  <<<<');
     return await del.sync( [ files.DIST_PATH ] );
 }
 
