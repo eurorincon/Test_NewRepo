@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Aileron-Regular';
+  src: url('fonts/Aileron-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron-Light';
+  src: url('fonts/Aileron-Light.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron-Bold';
+  src: url('fonts/Aileron-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vdzai0');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vdzai0#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?vdzai0') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?vdzai0') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?vdzai0##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i,
+.icomoon-liga {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga"1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-nw_tb {
+  &:before {content: $icon-nw_tb;}}
+.icon-dwn {
+  &:before {content: $icon-dwn;}}
+.icon-grid1 {
+  &:before {content: $icon-grid;}}
+.icon-lst1 {
+  &:before {content: $icon-lst;}}
+.icon-HangarLogoBlk {
+  &:before {content: $icon-HangarLogoBlk;}}
+.icon-cloud-download {
+  &:before {content: $icon-cloud-download;}}
+.icon-HangarLogoSquare {
+  &:before {content: $icon-HangarLogoSquare;}}

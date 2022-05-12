@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stage Banners HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://hangarww.com/favicon-32x32.png" type="image/png" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.thehangar.cr/static/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+  <meta NAME="AUTHOR" CONTENT="Euro Rincon Montero">
+  <meta NAME="DESCRIPTION" CONTENT="AT&T B and B, Banners Proyects, by The Hangar.cr .">
+  <meta NAME="KEYWORDS" CONTENT="Banners,OLA,template,thehangar.cr,AT&T">
+  <meta NAME="Resource-type" CONTENT="Index">
+  <meta NAME="DateCreated" CONTENT="14 November 2019">
+  <meta NAME="robots" content="ALL">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="_dashboardFiles/dashboard.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="sideBar" id="side_Bar">
+      <div class="sideBarbtn">
+        <button type="button" id="grid" class="grid btn_grid active" title="Button to change view to Grid"
+          id="open-event">
+          <i class="icon-grid1"></i>
+        </button>
+        <button type="button" id="list" class="list btn_list" title="Button to change view to List">
+          <i class="icon-lst1"></i>
+        </button>
+        <button id="download-btn" data-files="" class="dwnld btn_dwnld" type="submit"
+          onclick="window.open('all_Set_Banners.zip')">
+          <i class="icon-cloud-download"></i><br>
+        </button>
+      </div>
+
+      <div class="header-logo" title="The Hangar WW">
+        <i class="icon-HangarLogoSquare"></i>
+      </div>
+    </header>
+    <main class="MainCont">
+      <header class="brandBox">
+        <div class="logo-wrap">
+          <i id="logoHangar" class="icon-HangarLogoBlk logoHangar" alt="The Hangar WW" title="The Hangar WW"></i>
+        </div>
+        <!-- ***** DYNAMIC AREA CONTENT / ******* -->
+
+        <!-- build:template
+        <%= bannerList %>
+        /build -->
+
+        <!-- ***** / DYNAMIC AREA CONTENT ******* -->
+        <footer class="footerBox" id="footerBox">
+          <h6>The Hangar Interactive All Rights Reserved 2020</h6>
+        </footer>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src='_dashboardFiles/dashboard.js'></script>
+</body>
+
+</html>

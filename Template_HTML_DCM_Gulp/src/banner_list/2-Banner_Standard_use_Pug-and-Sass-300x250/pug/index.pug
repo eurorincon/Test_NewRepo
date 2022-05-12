@@ -1,0 +1,41 @@
+extends ../../../pug/layout_wFont.pug
+block title
+	title master with fonts - 300x250
+block metaSize
+	meta(name="ad.size", content='width=300,height=250')
+
+block content
+	#step-1.wrapper.white-state.centered-layout.step(data-order=1)
+		a#main(href="javascript:window.open(window.clickTag); void(0)")
+			img(src="./images/image-1_300x250.jpg")#bg01
+			img(src="./images/image-2_300x250.jpg")#bg02
+			//- img(src="./images/image-2_300x250.jpg")#bg03
+			#copy1
+				#txt_01_h
+					| CONNECT
+			#copy1_a
+				#txt_01_a
+					| caregivers to
+					br
+					| patient data		
+
+			#copy2
+				#txt_02_a
+					| HTML5 with fonts
+			#copy3
+				#txt_03_a
+					| with the power of
+					br
+					| Edge-to-Edge Intelligence<sup>SM</sup>
+			#logos
+				img(src="./images/logo.svg")#logo_1
+
+				img(src="./images/himss20_logo.svg")#logo_nrf
+				#mid_line
+			#logoBox
+				img(src="./images/logo.svg")#img_Logo
+			#ctaBox
+				p#ctaTxt
+					| ACT NOW
+				#ctaShine
+				#ctaHit

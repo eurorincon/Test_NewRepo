@@ -1,0 +1,292 @@
+@import "variables";
+@import "fonts";
+/* */
+
+body {
+    background-color: $colorBkgndBody;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+textarea,
+select,
+input,
+button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.footerBox {
+    position: relative;
+    right: 20px;
+    margin: 1px auto;
+    height: 20px;
+    max-width: 965px;
+    padding: 10px;
+    font-family: $fontFamilyText;
+    font-size: 9px;
+    text-align: right;
+    background-color: $colorBkgndBody;
+
+    h6 {
+        color: $blackColor;
+    }
+}
+
+.sideBar {
+    background-color: $mainBlackColor;
+    width: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    h3 {
+        color: $whiteColor;
+        padding: 10px;
+    }
+
+    .sideBarbtn {
+        margin-top: 120px;
+
+        .btn_list {
+            flex-direction: row;
+        }
+
+        .btn_list,
+        .btn_grid,
+        .btn_dwnld {
+            color: $whiteColor;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            border: 0px solid $color_border2;
+            background-color: transparent;
+            transition: all 0.5s ease-out;
+
+            i {
+                font-size: 22px;
+                vertical-align: middle;
+                color: $whiteColor;
+            }
+
+            span {
+                color: $whiteColor;
+                font-size: 1.1em;
+                margin: 0 0 0 6px;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                color: lighten($mainBlackColor, 30%);
+                background-color: darken($mainBlackColor, 10%);
+                transition: all 0.5s ease-out;
+
+                i,
+                span {
+                    color: lighten($mainBlackColor, 20%);
+                }
+            }
+
+            &:active {
+                background-color: darken($mainBlackColor, 10%);
+            }
+
+        }
+
+        .btn_dwnld {
+            color: $whiteColor;
+
+            i,
+            span {
+                color: $whiteColor;
+            }
+        }
+
+        .active {
+            color: $whiteColor;
+            background-color: darken($mainBlackColor, 10%);
+            transition: all 0.5s ease-out;
+
+            i,
+            span {
+                color: $whiteColor;
+            }
+        }
+    }
+.header-logo {
+    color: $whiteColor;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 0px solid $color_border2;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+
+    i {
+        font-size: 22px;
+        vertical-align: middle;
+        color: $whiteColor;
+    }
+
+    span {
+        color: $whiteColor;
+        font-size: 1.1em;
+        margin: 0 0 0 6px;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+}
+
+.MainCont {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .brandBox {
+        margin: 24px auto 0 auto;
+        width: 100%;
+        max-width: 965px;
+        font-family: $fontFamily;
+
+        h2,
+        h3 {
+            padding-left: 0;
+        }
+
+        h3 {
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            padding-bottom: 40px;
+        }
+
+        h2 {
+            color: $mainBlackColor;
+            font-size: 25px;
+            letter-spacing: normal;
+            font-family: $fontFamilyTitle0;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            color: $secundaryColor;
+            font-size: 16px;
+            font-family: $fontFamilyTitle0;
+        }
+    }
+
+    .logo-wrap {
+        margin: 10px 20px;
+        float: right;
+        // width: 17%;
+
+        #logoHangar {
+            font-size: 60px;
+        }
+    }
+
+    .innerBox {
+        display: inline-block;
+        margin: 0 2.5%;
+        width: 95%;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 75vh;
+    max-width: $maxWScreen;
+    transition: all 0.5s ease-out;
+
+    ul {
+        list-style: none;
+        border: 0px solid $superLighter;
+        padding: 0;
+
+        li {
+            padding: 3px 0px 3px 5px;
+
+            &:hover {
+                color: $mainBlackColor;
+            }
+
+            i {
+                margin: 0px 0px;
+                padding: 0;
+            }
+
+            label {
+                display: none;
+            }
+
+            a {
+                color: $bannerTitleColor;
+
+                &:link {
+                    text-decoration: none;
+                    color: $bannerTitleColor;
+                }
+
+                &:visited {
+                    color: $bannerTitleColor;
+                }
+
+                &:hover {
+                    color: $btn_txt_hoverColor;
+                }
+
+                &:active {
+                    color: $btn_txt_hoverColor;
+                }
+            }
+        }
+    }
+}
+
+@import "styleList";
+@import "styleGrid";
+
+.fancybox-slide--iframe .fancybox-content {
+    margin: 0;
+}
+
+.fancybox-toolbar {
+    display: none;
+}
+

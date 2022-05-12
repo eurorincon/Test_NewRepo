@@ -1,0 +1,55 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+//colors
+$blackColor: rgb(44, 44, 44);
+$whiteColor: white;
+
+// New Design Color
+$mainBlackColor: #0a1f25;
+$mainGreyColor: rgba($mainBlackColor, 0.6); // 60%
+$mainLightGreyColor: rgba($mainBlackColor, 0.1); // 5%
+$mainWhiteColor: rgba($mainBlackColor, 0.01); // 1%
+
+$secundaryColor: #00b0e0;
+$terciaryColor: #dd2c48;
+
+$color: $blackColor;
+$bannerTitleColor: #757575;
+$alertColor: #db0f0f;
+$superLighter: lighten($color, 90%);
+$lighter: lighten($color, 60%);
+$gris50: lighten($color, 50%);
+$dark: darken($color, 10%);
+$darker: darken($color, 20%);
+
+$color_border: #999;
+$color_border2: #ddd;
+$color_border3: #f8f9f9;
+$colorBkgndBody: #f8f7f7;
+$btn_txt_Color: $dark;
+$btn_txt_hoverColor: $darker;
+$titleColor: $mainBlackColor;
+
+$icomoon-font-family: 'hangar_icon' !default;
+$icomoon-font-path: 'fonts' !default;
+
+$fontFamily: 'Aileron-Regular', Helvetica, sans-serif;
+$fontFamilyTitle0: 'Aileron-Bold', Helvetica, sans-serif;
+$fontFamilyTitle1: 'Aileron-Bold', Helvetica, sans-serif;
+$fontFamilyTitle2: 'Aileron-Bold', Helvetica, sans-serif;
+$fontFamilyText: 'Aileron-Regular', Helvetica, sans-serif;
+$fontFamilyGrid1: 'Aileron-Regular', Helvetica, sans-serif;
+$fontFamilyData: 'Aileron-Light', Helvetica, sans-serif;
+
+$minWScreen: 380px;
+$maxWScreen: 975px;
+$break-small: 620px;
+$break-large: 975px;
+
+
+$icon-nw_tb: '\e906';
+$icon-dwn: '\e900';
+$icon-grid: '\e903';
+$icon-lst: '\e905';
+$icon-cloud-download: '\e901';
+$icon-HangarLogoBlk: '\e902';
+$icon-HangarLogoSquare: '\e904';

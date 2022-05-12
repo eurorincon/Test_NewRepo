@@ -1,0 +1,145 @@
+/*************** Grid Style ***************/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    transition: all 0.5s ease-out;
+    .nameListItems {
+        display: none;
+    }
+    ul{
+        transition: all 0.5s ease-out;
+    }
+    li.contAd {
+        border: 1px solid $mainLightGreyColor;
+        border-radius: 4px;
+        background-color: $mainWhiteColor;
+        padding: 0px;
+        font-size: 1em;
+        transition: all 0.5s ease-out;
+        width: 300px;
+        margin: 0 20px 20px 0;
+        box-shadow: 2px 2px 4px 0px $mainLightGreyColor;
+
+        &:hover {
+            border: 1px solid $mainGreyColor;
+            transition: all 0.5s ease-out;
+        }
+
+        .contAd-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $mainWhiteColor;
+            padding: 5px 15px;
+            height: 30px;
+
+            .titleBanner,
+            .titleBanner a {
+                width: 70%;
+                font-size: 14px;
+                font-family: $fontFamilyGrid1;
+                font-weight: normal;
+                color: $mainBlackColor;
+            }
+
+            .btnBox {
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .btn_zip,
+                .btn_link,
+                .btn_bkup {
+                    font-size: 14px;
+                    font-weight: 900;
+                    color: $mainBlackColor;
+
+                    i {
+                        display: inline-block;
+                        margin: 6px 0;
+                        color: $mainBlackColor;
+                    }
+
+                    &:hover {
+                        i {
+                            font-weight: 900;
+                            color: $fontFamilyGrid1 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn_thmb {
+            transition: background-color 0.3s ease-out;
+            display: block;
+            background-color: $whiteColor;
+            margin: 0;
+
+            &:hover {
+                background-color: rgba($blackColor, 0.1);
+            }
+
+            .thumb {
+                width: 100%;
+                height: 170px;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                margin: 0 auto;
+                padding: 0 0;
+            }
+        }
+
+        .linea {
+            display: none;
+        }
+
+        .kbBox {
+            display: flex;
+            justify-content: space-between;
+            background-color: $mainWhiteColor;
+            padding: 10px 15px;
+
+            .danger,
+            .undefined {
+                font-size: 12px !important;
+                color: $alertColor !important;
+            }
+
+            #img_kb,
+            #zip_kb {
+                font-size: 12px;
+                font-family: $fontFamilyGrid1;
+                font-weight: normal;
+                color: $secundaryColor;
+            }
+
+            #img_kb,
+            #zip_kb {
+                &::before {
+                    color: $mainBlackColor;
+                }
+            }
+
+            #img_kb {
+                &::before {
+                    content: 'Static: ';
+                }
+            }
+
+            #zip_kb {
+                &::before {
+                    content: 'Banner: ';
+                }
+            }
+        }
+
+        .btnBoxMobile {
+            display: none;
+        }
+    }
+}

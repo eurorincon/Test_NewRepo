@@ -1,0 +1,22 @@
+extends ../../../pug/layout_FT_Feed
+block title
+	title HTML Feed banner
+block metaSize
+	meta(name="ad.size", content='width=970,height=250')
+block content
+	#step-1.wrapper.white-state.centered-layout.step(data-order=1)
+		ft-default#main
+
+			#finalframe.finalframe
+				#leftBoxFF
+					ft-dynamic(name='EyebrowTxt')#txt_FF_l.txt_FF_l_big
+				#rightBoxFF
+					ft-dynamic(name='BlueTitle')#txt_FF_r.txt_FF_r_big
+				#ctaBox
+					ft-dynamic(name='cta_txt')#ctaTxt.ctaTxt
+					#ctaShine
+					#ctaHit
+			ft-dynamic(name='phone_img')#bg01
+			ft-dynamic(name='girl_img')#girl_img
+			#logo
+				img(src="./images/b2b_logo.svg")

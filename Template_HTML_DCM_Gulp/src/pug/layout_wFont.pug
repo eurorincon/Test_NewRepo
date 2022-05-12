@@ -1,0 +1,40 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    block title
+    meta(name="viewport", content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    link(rel='stylesheet', href='css/styles.css')
+    block metaSize
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/CSSRulePlugin.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/TextPlugin.min.js")
+
+    script(src="js/main.js")
+    script(type='text/javascript').
+     var clickTag = "https://www.att.com/";
+  body.loading
+    .preloader
+      div
+      div
+    block content
+
+    script(src="webfont.js")
+    script(type='text/javascript').
+      function fontPreloader() {
+      WebFont.load({
+      custom: {
+      families: ['ATTAleckSans_W_Bd', 'ATTAleckSans_W_Rg','ATTAleckSans_W_Md', 'ATTAleckSans_W_Lt']
+      },
+      active: function () {
+      App_banner.getInstance().init();
+      },
+      inactive: function () {
+      App_banner.getInstance().init();
+      },
+      });
+      }
+      fontPreloader();
+

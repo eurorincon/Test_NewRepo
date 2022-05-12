@@ -1,0 +1,276 @@
+$banner-width: 300px;
+$banner-height: 250px;
+$txtColor: #ffffff;
+$fontBold: 'ATTAleckSans_W_Bd';
+$fontReg: 'ATTAleckSans_W_Rg';
+$fontMed: 'ATTAleckSans_W_Md';
+
+
+@import "../../../styles/main";
+*{font-family: Arial, Helvetica, sans-serif;}
+@font-face {
+    font-family: 'ATTAleckSans_W_Bd';
+    src: url('../fonts/ATTAleckSans_W_Bd.woff2') format('woff2'),
+        url('../fonts/ATTAleckSans_W_Bd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ATTAleckSans_W_Rg';
+    src: url('../fonts/ATTAleckSans_W_Rg.woff2') format('woff2'),
+        url('../fonts/ATTAleckSans_W_Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ATTAleckSans_W_Md';
+    src: url('../fonts/ATTAleckSans_W_Md.woff2') format('woff2'),
+        url('../fonts/ATTAleckSans_W_Md.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*styles begin here*/
+.step[data-order='1'] {
+
+    div,
+    img,
+    a {
+        display: inline-block;
+        position: absolute;
+    }
+    sup{
+        font-size: 8px;
+        vertical-align:5px; 
+        margin-left: 0px;
+        
+       
+
+
+    }
+
+    #main {
+        top: -1px;
+        left: -1px;
+        background-color: #fff;
+        height: $banner-height;
+        width: $banner-width;
+
+        #logoBox {
+            top: 0;
+            left: 0;
+            width: $banner-width;
+            height: $banner-height;
+            background-color: rgba(#119DDB, 0.9);
+            overflow: hidden;
+
+        }
+
+        #img_Logo {
+            top: 0px;
+            left: 80px;
+            width: 137px;
+            height: 100%;
+        }
+
+        #logos {
+            top: 0;
+            left: 0;
+            width: $banner-width;
+            height: $banner-height;
+        }
+
+        #logo_1 {
+            top: 100px;
+            left: 15px;
+            width: 79px;
+            height: 100%;
+
+        }
+
+
+        #logo_nrf {
+            top: 105px;
+            left: 110px;
+            width: 56px;
+            height: 100%;
+
+
+        }
+
+        #mid_line{
+            top: 213px;
+            left: 101px;
+            width: 1px;
+            height: 24px;
+            background: #ffffff;
+        }
+
+
+        #bg01 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $banner-width;
+            height: $banner-height;
+
+        }
+
+        #bg02 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $banner-width;
+            height: $banner-height;
+
+        }
+
+       
+
+        #copy1 {
+            top: 70px;
+            left: 0;
+            width: 231px;
+            height: 55px;
+            background-color: rgba(#119ddb, 0.9);
+
+        }
+
+        #copy1_a {
+            top: 125px;
+            left: 0;
+            width: $banner-width;
+            height: 100px;
+
+        }
+
+        #copy2 {
+            top: 104px;
+            left: 0;
+            width: $banner-width;
+            height: 100px;
+        }
+
+        #copy3 {
+            top: 104px;
+            left: 0;
+            width: $banner-width;
+            height: 120px;
+        }
+
+        #copy3_a {
+            top: 70px;
+            left: 0;
+            width: $banner-width;
+            height: 120px;
+        }
+
+        #txt_01_h {
+            display: inline-block;
+            position: initial;
+            top: 0px;
+            left: 0px;
+            font-family: $fontBold;
+            font-size: 44px;
+            padding: 5px 12px 6px 12px;
+            transform-origin: center center;
+            color: $txtColor;
+            line-height: 1;
+            /*background-color: rgba(#119ddb, 0.9);           */
+        }
+
+        #txt_01_a {
+            display: inline-block;
+            position: initial;
+            font-family: $fontMed;
+            font-size: 19px;
+            padding: 6px 15px 10px 14px;
+            color: $txtColor;
+            line-height: 1;
+            background-color: rgba(#006ec2, 0.9);
+
+
+        }
+
+
+        #txt_02_a {
+            display: inline-block;
+            position: initial;
+            width: auto;
+            max-width: 69%;
+            font-family: $fontMed;
+            font-size: 19px;
+            padding: 6px 20px 10px 20px;
+            color: $txtColor;
+            line-height: 1.1;
+            background-color: rgba(#119ddb, 0.9);
+
+        }
+
+        #txt_03_a {
+            display: inline-block;
+            position: initial;
+            width: auto;
+            max-width: 100%;
+            font-family: $fontMed;
+            font-size: 19px;
+            padding: 6px 19px 10px 20px;
+            color: $txtColor;
+            line-height: 1.05;
+            background-color: rgba(#119DDB, 0.9);
+        }
+
+    }
+
+    #ctaBox {
+        overflow: hidden;
+        top: 213px;
+        left: 188px;
+        width: 100px;
+        height: 26px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-color: #FF585D;
+
+        #ctaTxt {
+            top: -8px;
+            font-size: 13px;
+            font-family: $fontMed;
+            color: $txtColor;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+
+    #ctaHit {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #ctaShine {
+        width: 60px;
+        height: 80px;
+        border-radius: 15px;
+        top: -30px;
+        left: -70px;
+        transform: translate3d (0, 0, 0);
+        transform: rotate(35deg);
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+0,0.5+50,0+100 */
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+        /* IE6-9 */
+    }
+}

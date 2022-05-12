@@ -1,0 +1,160 @@
+/*************** list Style ***************/
+
+.list {
+    display: flex;
+    flex-direction: column;
+    font-family: $fontFamilyText;
+    animation: show_hide ease-in 0.3s 0s forwards;
+
+    li.contAd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid lighten($blackColor, 80%);
+        border-radius: 4px;
+        background-color: $mainLightGreyColor;
+        padding: 0 0 0 20px;
+        margin-bottom: 20px;
+        font-size: 1em;
+        width: 90%;
+        // box-shadow: 1px 3px 6px lightgrey;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            border: 1px solid $mainBlackColor;
+            transition: all 0.5s ease-out;
+        }
+
+        .contAd-header {
+            width: 50%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+
+            .titleBanner {
+                width: 100%;
+                font-size: 16px;
+                font-family: $fontFamilyGrid1;
+                font-weight: normal;
+                color: $bannerTitleColor;
+
+                &:hover {
+                    color: $mainBlackColor;
+                }
+            }
+
+            .btnBox,
+            .linea {
+                display: none;
+            }
+        }
+
+        .btn_thmb {
+            display: none;
+        }
+
+        .kbBox {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            width: 30%;
+            border-left: 12px solid $whiteColor;
+
+            .danger,
+            .undefined {
+                font-size: 12px !important;
+                color: $alertColor !important;
+            }
+
+            .linea {
+                height: 60px;
+                border-left: 12px solid $whiteColor;
+            }
+
+            #img_kb,
+            #zip_kb {
+                font-size: 12px;
+                font-family: $fontFamilyData;
+                font-weight: normal;
+                color: $secundaryColor;
+                flex: 0 0 46%;
+                text-align: center;
+            }
+
+            #img_kb,
+            #zip_kb {
+                &::before {
+                    color: $mainBlackColor;
+                }
+            }
+
+            #img_kb {
+                &::before {
+                    content: 'Static: ';
+                }
+            }
+
+            #zip_kb {
+                &::before {
+                    content: 'Banner: ';
+                }
+            }
+        }
+
+        .btnBoxMobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 60px;
+            width: 20%;
+            border-left: 12px solid $whiteColor;
+
+            .linea {
+                height: 60px;
+                border-left: 12px solid $whiteColor;
+            }
+
+            .btn_zip,
+            .btn_link {
+                font-size: 1.3em;
+                padding: 0 8%;
+                color: $mainBlackColor !important;
+
+                &:hover {
+                    i {
+                        color: $mainBlackColor !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    // .list li.contAd {
+    //   width: 100%;
+    // }
+
+    // .list li.contAd .kbBox #img_kb::before,
+    // .list li.contAd .kbBox #zip_kb::before {
+    //     display: block;
+    //     margin-bottom: 3px;
+    // }
+}
+
+@media screen and (max-width: 978px) {
+    // .list li.contAd .btnBoxMobile .btn_zip,
+    // .list li.contAd .btnBoxMobile .linea {
+    //     display: none;
+    // }
+
+    // .list li.contAd .contAd-header {
+    //     width: 60%;
+    // }
+
+    // .list li.contAd .btnBoxMobile {
+    //     width: 10%;
+    // }
+}
+
+// ******************************* //

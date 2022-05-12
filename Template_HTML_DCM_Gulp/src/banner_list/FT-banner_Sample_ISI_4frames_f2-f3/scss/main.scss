@@ -1,0 +1,405 @@
+$banner-width: 300px;
+$banner-height: 250px;
+$txtColor: #000;
+$txtWhite: #fff;
+
+$ctaRed: #ff585d;
+$ctaGreen: #7cebdc;
+$ctaYellow: #f4b23e;
+
+$txtColorBlue: #009fdb;
+$txtColorDarkBlue: #0f54af;
+
+$fontRg: 'ATTAleckSans_W_Rg';
+$fontCdRg: 'ATTAleckCd_W_Rg';
+$fontCdBd: 'ATTAleckCd_W_Bd';
+
+
+@import "../../../styles/main";
+
+@font-face {
+    font-family: 'ATTAleckSans_W_Rg';
+    src: url('../fonts/ATTAleckSans_W_Rg.woff2') format('woff2'), 
+        url('../fonts/ATTAleckSans_W_Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckCd_W_Rg';
+    src: url('../fonts/ATTAleckCd_W_Rg.woff2') format('woff2'),
+        url('../fonts/ATTAleckCd_W_Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckCd_W_Bd';
+    src: url('../fonts/ATTAleckCd_W_Bd.woff2') format('woff2'),
+        url('../fonts/ATTAleckCd_W_Bd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// styles begin here
+.step[data-order='1'] {
+
+    div,
+    img,
+    a {
+        display: inline-block;
+        position: absolute;
+    }
+.hide {
+    display: none !important;
+}
+ 
+    #main {
+        top: -1px;
+        left: -1px;
+        background-color: #e9e9e9;
+        height: $banner-height;
+        width: $banner-width;
+
+
+        #logo{
+            bottom: 9px;
+            left: 14px;
+            width: 73px;
+            height: 30px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+        #bg01, #bg02, #bg03 {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $banner-width;
+            height: $banner-height;
+        }
+
+        #frame1 {
+            display: flex;
+            width: $banner-width;
+            height: $banner-height;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #txtBox1 {
+                position: relative;
+                display: block;
+                padding: 9px 15px;
+
+                #txt_01 {
+                    font-family: $fontRg;
+                    font-size: 22px;
+                    text-align: center;
+                    color:$txtColor;
+                    line-height: 1.2;
+                }
+            }
+        }
+
+        #frame2 {
+            width: $banner-width;
+            height: $banner-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            #txtBox2 {
+                position: relative;
+                padding: 18px 0 0 14px;
+                align-self: flex-start;
+
+                #txt_02 {
+                    font-family: $fontRg;
+                    font-size: 22px;
+                    color: $txtColor;
+                    line-height: 1.1;
+                }
+            }
+        }
+
+        #frame3 {
+            width: $banner-width;
+            height: $banner-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            #txtBox3 {
+                position: relative;
+                padding: 18px 0 0 14px;
+                align-self: flex-start;
+
+                #txt_03 {
+                    font-family: $fontRg;
+                    font-size: 22px;
+                    color: $txtColor;
+                    line-height: 1.1;
+                }
+            }
+        }
+
+        #finalframe {
+            width: $banner-width;
+            height: 189px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #leftBoxFF {
+                position: relative;
+                background-color:  $txtColorBlue; 
+                padding: 8px 15px;
+                align-self: flex-start;
+
+                #txt_FF_a {
+                    font-family: $fontRg;
+                    font-size: 18px;
+                    color: $txtWhite;
+                    line-height: 20px;
+                }
+            }
+
+            #rightBoxFF {
+                position: relative;
+                right: 0;
+                background-color: $txtColorDarkBlue;
+                padding: 8px 12px;
+                align-self: flex-end;
+
+                #txt_FF_b {    
+                    font-family: $fontRg;
+                    font-size: 9px;
+                    color: $txtWhite;
+                    line-height: 10px;
+                }
+            }
+        }
+        // legal text
+        .legal_Box {
+            margin-right: 15px;
+            padding-bottom: 14px;
+            width: 180px;
+            right: 0;
+            bottom: 0px;
+
+            #legal_txt_f1, #legal_txt_f2, #legal_txt_f3, #legal_txt_ff {
+                font-family: $fontRg;
+                font-size: 8px;
+                line-height: 1;
+                color: $txtColor;
+                text-align: right;
+            }
+        }
+ 
+    }
+       .ctaContainer{
+            -ms-flexbox: 1 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            bottom: 43px;
+            width: $banner-width;
+            height: 30px;
+
+        }
+        #ctaBox {
+            overflow: hidden;
+            width: 110px;
+            height: 28px;
+            bottom: 46px;
+            left: 95px;
+            background-repeat: no-repeat;
+            background-color: transparent;
+        &:hover {
+            .ctaTxt{
+                color: $txtWhite;
+            }
+        }
+            .ctaTxt {
+                font-size: 12px;
+                font-family: $fontRg;
+                color: $txtColor;
+                line-height: 2.1;
+                text-align: center;
+            }
+            
+
+        }
+
+        #ctaHit {
+            visibility: hidden;
+            opacity: 0;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
+
+        #ctaShine {
+            width: 60px;
+            height: 80px;
+            border-radius: 15px;
+            top: -30px;
+            left: -100px;
+            transform: translate3d (0, 0, 0);
+            transform: rotate(35deg);
+
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+0,0.5+50,0+100 */
+            background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+            /* IE6-9 */
+        }
+
+
+}
+
+.offer{
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+.cta_red{
+    display: block;
+    background-color: $ctaRed;
+    padding: 0;
+}
+.cta_green{
+    display: block;
+    background-color: $ctaGreen;
+    padding: 0;
+}
+.cta_yellow{
+    display: block;
+    background-color: $ctaYellow;
+    padding: 0;
+}
+.cta_T{
+    display: block;
+    background-color: transparent;
+    padding: 0;
+}
+.blueColor{
+    color: $txtColorBlue;
+}
+/******************************************/
+
+
+    #ctaHitOpen{
+        bottom: 8px;
+        right: 11px;
+        width: 80px;
+        height: 13px;
+        text-align: right;
+        background-color: transparent;
+    }
+
+    .btn_legal{
+        font-size: 8px;
+        font-family: $fontCdRg;
+        color: $txtColor;
+        .btn_legal_text{
+            margin: 0 2px;
+            display: inline;
+            text-decoration: underline;
+        }
+    }
+    #ctaHitClose{
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    #btn_close {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 0px;
+        outline: 0;
+
+        #img_close {
+            top: 1px;
+            left: 1px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    /******** Legal BOX ISI Scroll ********/
+.legal_close {
+    top: 4px;
+    left: -3px;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#legalBox {
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: $banner-width;
+    height: $banner-height;
+    background-color: $txtColorBlue;
+}
+
+    /******************************************/
+.isi-main {
+    height: 212px;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: 4;
+}
+
+.isi_wrapper {
+    left: 5px;
+    width: 290px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 3000;
+}
+ .isi {
+    width: 270px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    font-family: $fontCdRg;
+    font-size:9px;
+    line-height: 1.1;
+    color: white;
+    b{
+        font-family: $fontCdBd;
+        font-size:9px;
+        line-height: 1.1;
+    }
+    p{
+        font-family: $fontCdRg;
+        font-size:9px;
+        line-height: 1.1;
+    }
+}

@@ -1,0 +1,35 @@
+extends ../../../pug/layout_FT
+block title
+	title 300x250
+block metaSize
+	meta(name="ad.size", content='width=300,height=250')
+block content
+	#step-1.wrapper.white-state.centered-layout.step(data-order=1)
+		ft-default#main
+			ft-dynamic(name='bkgnd_02')#bg02
+			ft-dynamic(name='bkgnd_01')#bg01
+			#frame1
+				#bigBox1
+					ft-dynamic(name='eye_brow_01_line1')#txt_01_a
+				#txtBox1
+					ft-dynamic(name='eye_brow_01_line2')#txt_01_b
+			#frame2
+				#bigBox2
+					ft-dynamic(name='eye_brow_02_line1')#txt_02_a
+			#finalFrame
+				#txtBox3
+					ft-dynamic(name='end_card_head1')#txt_ff_a
+				#bigBox3
+					ft-dynamic(name='end_card_head2')#txt_ff_b
+					ft-dynamic(name='end_card_head3')#txt_ff_c
+			#ctaBox
+				ft-dynamic(name='cta_txt')#ctaTxt
+				#ctaShine
+				#ctaHit
+			#logoCorner
+				img(src="./images/logo.svg")
+			#legalBox
+				ft-dynamic(name='legal_txt')#txt_legal
+			button.btnLegal(onclick='legalDisc()')#btn_disc
+				ft-dynamic(name='btn_legal')#txt_disc_btn
+				| >
