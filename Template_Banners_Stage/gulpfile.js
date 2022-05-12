@@ -9,7 +9,7 @@ const reload = browserSync.reload; // Manual Reload
 
 // CSS/SASS
 const autoprefixer = require('gulp-autoprefixer'); // Prefix CSS 
-const sass = require('gulp-sass'); // SASS Plugin
+const sass = require('gulp-sass')(require('sass')); // SASS Plugin
 
 // HTML/PUG
 const processhtml = require('gulp-processhtml'); // Process/Transform html files
@@ -73,7 +73,7 @@ function server(cd) {
 
 // Delete Dist Folder before build
 async function clean() {
-    console.log('>>>>>>>>>> STARTING DELETED TASK  ✂️  <<<<');
+    console.log('>>>>>>>>>> STARTING DELETED TASK  🧹  <<<<');
     return await del.sync( [ files.DIST_PATH ] );
 }
 
@@ -98,13 +98,7 @@ function sassDashboard() {
 function processHtml() {
     console.log('>>>>>>>>>> STARTING STAGE TASK  🛣  <<<<');
     return src('src/index.html')
-        .pipe(processhtml(
-            {
-                data: {
-                    bannerList: generateIndex()
-                }
-            }
-        ))
+        .pipe(processhtml({data: {bannerList: generateIndex()}}))
         .pipe(dest(`${files.DIST_PATH}/`));
         
 }
